@@ -14,7 +14,7 @@
 2
 
 TODO
-   Non funziona se la somma di un settore è 0 perchè l'array delle somme è inizializzato a 0 e questa cosa da problemi.
+RISOLTO  Non funziona se la somma di un settore è 0 perchè l'array delle somme è inizializzato a 0 e questa cosa da problemi.
 */
 
 #include <iostream>
@@ -49,9 +49,10 @@ int main() {
 
    int mi = 0;
    int mj = 0;
-   for (int i = 0; i < n; i++) {
-      for(int j = 0; j < n; j++) {
-         if (sum[i][j] > sum[mi][mj] && sum[i][j] != 0) {
+   for (int i = 0; i < n-key+1; i++) {
+      for(int j = 0; j < n-key+1; j++) {
+         // cout << "settore " << i << "," << j << " somma " << sum[i][j] << endl;
+         if (sum[i][j] > sum[mi][mj]) {
             mi = i;
             mj = j;
          }
