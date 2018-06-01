@@ -1,0 +1,20 @@
+Si implementi una classe telefonata che contenga come
+dati:
+   - l'orario in cui la telefonata è iniziata
+   - l'orario in cui è terminata
+   - il numero che è stato composto
+
+La classe deve contenere almeno i seguenti metodi:
+   - costruttore senza parametri;
+   - costruttore che riceve i due orari e il numero;
+   - funzioni get e set;
+   - operatore==;
+   - operatore>=;
+   - operatore<<;
+   - operatore>>;
+
+----------------
+Si implementi poi un main nel quale, preso da input
+un array di telefonata, stampi la prima e l'ultima
+telefonata della giornata e l'orario nel quale è
+iniziata la telefonata più lunga.
